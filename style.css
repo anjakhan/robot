@@ -1,0 +1,154 @@
+body {
+    background-color: #D8EEAC;
+}
+
+h1 {
+    text-align: center;
+    color: #003333;
+	font-family: 'Roboto', sans-serif;
+}
+
+.robots {
+    display: flex;
+    justify-content: center;
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+     background-color: #557710;
+}
+
+.head { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+} 
+
+.eyes {
+    display: flex;
+}
+
+.head:hover {
+    width: 300px;
+    transition: 1s ease-in-out;
+    background-color: #801212;
+    margin-top: 30px;
+}
+
+.upper_body { 
+	width: 300px; 
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+} 
+
+.left_arm { 
+	margin-right: 10px; 
+} 
+
+.right_arm { 
+    margin-left: 10px;
+} 
+
+.right_arm:hover {
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    background-color: #0B4D4D;
+}
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px;
+} 
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	margin: 0 auto;
+    display: flex;
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+} 
+
+.left_leg { 
+	margin-left: 45px; 
+} 
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.right_leg { 
+	margin-left: 30px; 
+}
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: white;  
+} 
+
+.left_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 120px; 
+}
+
+.speech-bubble {
+    position: relative;
+    display: inline-block;
+	background: #0B4D4D;
+    border-radius: .4em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    margin-left: 230px;
+}
+
+.speech-bubble:after {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+    height: 0;
+	border: 20px solid transparent;
+	border-right-color: #0B4D4D;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: 0;
+	margin-left: -20px;
+}
+
+
